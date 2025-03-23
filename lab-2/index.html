@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vince Martin Quiñanola | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Enable dark mode class strategy
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-md bg-white dark:bg-gray-800 sticky top-0 z-50">
+    <h1 class="text-2xl font-bold">Vince Martin Quiñanola</h1>
+  
+    <!-- Navigation and Theme Toggle -->
+    <div class="flex items-center space-x-6">
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" id="about-link" class="hover:text-blue-500 transition">About Me</a></li>
+          <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
+          <li><a href="#" id="skills-link" class="hover:text-blue-500 transition">Skills</a></li>
+          <li><a href="#" id="contact-link" class="hover:text-blue-500 transition">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Theme Toggle -->
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" id="theme-toggle" class="sr-only peer">
+        <div class="w-14 h-8 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 dark:bg-gray-700 rounded-full peer peer-checked:bg-yellow-400 transition duration-300 ease-in-out"></div>
+        <div class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full transition-all duration-300 ease-in-out peer-checked:translate-x-6 shadow-md"></div>
+        <span class="absolute left-2 top-1.5 text-xs dark:text-white">🌙</span>
+        <span class="absolute right-2 top-1.5 text-xs text-black dark:text-white">☀️</span>
+      </label>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="flex-grow max-w-4xl mx-auto px-4 py-10 space-y-16">
+
+    <!-- About Section (Initially Hidden) -->
+<section id="about-section" class="hidden flex flex-col items-center px-6">
+  <div class="flex flex-col md:flex-row items-center md:items-start max-w-4xl mx-auto">
+    <!-- Left: Text Content -->
+    <div class="md:w-1/2 text-left">
+      <h2 class="text-5xl font-bold mb-4">About Me</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
+        I'm a 4th year Computer Science in the University of the Philippines.
+      </p>
+      <p class="mt-4 text-gray-600 dark:text-gray-300">
+        Since 2008 I'm already cute enough — but apparently, that wasn’t enough. So I went ahead and added skills, experience, and just the right amount of coffee-fueled ambition. From curiosity to creativity, I’ve grown into someone who doesn’t just bring charm to the table, but also a whole toolkit of ideas, projects, and the drive to make things happen.
+      </p>
+    </div>
+
+    <!-- Right: Main Image -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="images/me.jpg" alt="About Me" class="w-full max-w-xs rounded-lg shadow-lg">
+    </div>
+  </div>
+
+  <!-- Gallery (Below the Main Image) -->
+  <div class="mt-6 flex justify-center gap-4">
+    <img src="images/me3.jpg" class="w-24 h-24 rounded-lg shadow-md" alt="Gallery Image 1">
+    <img src="images/me1.jpg" class="w-24 h-24 rounded-lg shadow-md" alt="Gallery Image 2">
+  </div>
+</section>
+  
+<!-- Contact Section -->
+<section id="contact-section" class="hidden flex flex-col items-center px-6 py-2">
+  <!-- Profile Image -->
+  <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-blue-500 shadow-md">
+    <img src="images/me.jpg" alt="Profile" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Title & Description -->
+  <h2 class="text-4xl font-bold mt-4">Contact Me</h2>
+  <p class="text-gray-600 dark:text-gray-300 mt-2 text-center max-w-lg">
+    Use my contact details for any inquiries, questions, or assistance. I'm happy to help!
+  </p>
+
+  <!-- Contact Info -->
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl text-center">
+    <!-- Email -->
+  <div class="flex flex-col items-center">
+    <div class="w-16 h-16 flex items-center justify-center bg-blue-500 text-white rounded-full shadow-lg">
+     <i class="fas fa-envelope text-3xl"></i> <!-- Email icon -->
+    </div>
+    <h3 class="text-xl font-semibold mt-4">EMAIL</h3>
+    <p class="text-gray-600 dark:text-gray-300">vquinanola@up.edu.ph</p>
+  </div>
+
+    <!-- Phone -->
+    <div class="flex flex-col items-center">
+      <div class="w-16 h-16 flex items-center justify-center bg-blue-500 text-white rounded-full shadow-lg">
+        <i class="fas fa-phone text-3xl"></i> <!-- Phone icon -->
+      </div>
+      <h3 class="text-xl font-semibold mt-4">PHONE (LANDLINE)</h3>
+      <p class="text-gray-600 dark:text-gray-300">+63 970-778-4224</p>
+    </div>
+
+    <!-- Location -->
+    <div class="flex flex-col items-center">
+      <div class="w-16 h-16 flex items-center justify-center bg-blue-500 text-white rounded-full shadow-lg">
+        <i class="fas fa-map-marker-alt text-3xl"></i> <!-- Location icon -->
+      </div>
+      <h3 class="text-xl font-semibold mt-4">ADDRESS</h3>
+      <p class="text-gray-600 dark:text-gray-300">138-C B.Rodriguez Street</p>
+      <p class="text-gray-600 dark:text-gray-300">Sambag II, Cebu City</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills-section" class="hidden flex flex-col items-center px-6 py-16 bg-gray-50 dark:bg-gray-900">
+  
+  <!-- Flutter Development -->
+  <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
+    
+    <!-- Left: Text Content -->
+    <div class="md:w-1/2 text-left">
+      <h2 class="text-4xl font-bold">Experience in Flutter and Cross-Platform Development</h2>
+      <p class="text-gray-600 dark:text-gray-300 mt-4">
+        I specialize in building cross-platform mobile applications using Flutter. With expertise in Dart programming, I create smooth, responsive, and visually appealing applications that work seamlessly on both iOS and Android. My skills include state management, UI/UX design, API integration, and performance optimization in Flutter.
+      </p>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="md:w-1/2 flex justify-center relative">
+      <img src="images/flutter.webp" alt="Flutter Development" class="w-80 h-80 object-cover rounded-lg shadow-lg">
+    </div>
+
+  </div>
+
+  <!-- Collaboration & Teamwork -->
+  <div class="max-w-6xl w-full flex flex-col md:flex-row-reverse items-center justify-between mt-16 space-y-10 md:space-y-0">
+    
+    <!-- Right: Text Content -->
+    <div class="md:w-1/2 text-left">
+      <h2 class="text-4xl font-bold">Team Player</h2>
+      <p class="text-gray-600 dark:text-gray-300 mt-4">
+        I thrive in team environments, working effectively with developers, designers, and project managers to bring ideas to life. I believe in clear communication, active listening, and problem-solving to ensure smooth collaboration and project success.
+      </p>
+    </div>
+
+    <!-- Left: Image -->
+    <div class="md:w-1/2 flex justify-center relative">
+      <img src="images/teamwork.jpg" alt="Teamwork" class="w-80 h-80 object-cover rounded-lg shadow-lg">
+    </div>
+
+  </div>
+
+</section>
+
+
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-100 dark:bg-gray-800 text-sm">
+    &copy; 2025 Vince Martin Quiñanola. All rights reserved.
+  </footer>
+
+
+  <script>
+    const aboutLink = document.getElementById('about-link');
+    const aboutSection = document.getElementById('about-section');
+    const contactLink = document.getElementById('contact-link');
+    const contactSection = document.getElementById('contact-section');
+    const skillsLink = document.getElementById('skills-link');
+    const skillsSection = document.getElementById('skills-section');
+
+    function showSection(sectionToShow) {
+      // Hide all sections
+      aboutSection.classList.add('hidden');
+      aboutSection.classList.remove('flex');
+
+      contactSection.classList.add('hidden');
+      contactSection.classList.remove('flex');
+
+      skillsSection.classList.add('hidden');
+      skillsSection.classList.remove('flex');
+
+      // Show the selected section
+      sectionToShow.classList.remove('hidden');
+      sectionToShow.classList.add('flex');
+    }
+
+    aboutLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(aboutSection);
+    });
+
+    contactLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(contactSection);
+    });
+
+    skillsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(skillsSection);
+    });
+
+
+  // Switch Theme
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    // Keep theme persistent
+    if (localStorage.theme === 'dark') {
+      html.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
