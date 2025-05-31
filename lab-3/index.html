@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pathfinding Visualizer</h1>
+        
+        <div class="controls">
+            <button id="startBtn">Set Start Point</button>
+            <button id="endBtn">Set End Point</button>
+            <button id="wallBtn">Place Walls</button>
+            <button id="findPathBtn">Find Path</button>
+            <button id="clearBtn">Clear Grid</button>
+            
+            <div class="speed-control">
+                <label for="speed">Visualization Speed:</label>
+                <select id="speed">
+                    <option value="slow">Slow</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span>Tiles Visited:</span>
+                <span id="visitedCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span>Path Length:</span>
+                <span id="pathLength">0</span>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div id="grid"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box start"></div>
+                <span>Start Point</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box end"></div>
+                <span>End Point</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box wall"></div>
+                <span>Wall</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box visited"></div>
+                <span>Visited</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box path"></div>
+                <span>Path</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/Node.js"></script>
+    <script src="js/PriorityQueue.js"></script>
+    <script src="js/Grid.js"></script>
+    <script src="js/Algorithm.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
